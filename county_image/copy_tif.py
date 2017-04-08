@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
-拷贝tif文件到硬盘
+python3.41
+拷贝tif文件到移动硬盘
 '''
 import shutil,glob,os,time
 # 要查找tif文件的目录
