@@ -8,7 +8,7 @@ import shutil,glob,os,time
 old_dir = r'E:\image\20170324_image\山东省\*\*\*.tif'
 old_path = r'E:\image\20170324_image'
 # 要拷贝文件的新目录
-new_path = r'F:\image\city_image0329'
+new_path = r'L:\image\city_image0329'
 # 查找每个需要拷贝的文件
 for filename in glob.glob(old_dir):
     # print(filename)
@@ -26,5 +26,7 @@ for filename in glob.glob(old_dir):
     shutil.copyfile(filename,new_file)
     endtime = time.perf_counter()
     costtime = endtime - begintime
+    # 删除原始文件
+    os.remove(filename)
     print(new_file,costtime)
 
