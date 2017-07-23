@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #python3.41
 #解析 http://www.gaokaopai.com/paihang-otype-2.html?f=1&ly=bd&city=&cate=&batch_type= 网址
+# http://gkcx.eol.cn/soudaxue/queryschool.html?&argschtype=HND%E9%A1%B9%E7%9B%AE&page=1
 import urllib.request
 import urllib.parse
 from bs4 import BeautifulSoup
